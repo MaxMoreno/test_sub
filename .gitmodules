@@ -1,0 +1,9 @@
+[submodule "mysql"]
+	path = mysql
+	url = https://github.com/inzpiral/mysql
+[submodule "java"]
+	path = java
+	url = https://github.com/inzpiral/java
+[submodule "openfire"]
+	path = openfire
+	url = https://github.com/inzpiral/openfire
