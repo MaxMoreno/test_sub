@@ -1,6 +1,6 @@
 [submodule "mysql"]
 	path = mysql
-	url = https://github.com/inzpiral/mysql
+	url = git@github.com:opscode-cookbooks/mysql.git
 [submodule "java"]
 	path = java
 	url = https://github.com/inzpiral/java
