@@ -6,4 +6,4 @@
 	url = https://github.com/inzpiral/java
 [submodule "openfire"]
 	path = openfire
-	url = https://github.com/inzpiral/openfire/tree/v1
+	url = https://github.com/inzpiral/openfire
