@@ -29,3 +29,6 @@
 	path = xfs
 	url = git@github.com:opscode-cookbooks/xfs.git
 
+[submodule "mysql"]
+	path = mysql
+	url = git@github.com:opscode-cookbooks/mysql.git
