@@ -13,9 +13,6 @@
 [submodule "openssl"]
 	path = openssl
 	url = git@github.com:opscode-cookbooks/openssl.git
-[submodule "mysql-chef_gem"]
-	path = mysql-chef_gem
-	url = git@github.com:opscode-cookbooks/mysql-chef_gem.git
 [submodule "postgresql"]
 	path = postgresql
 	url = git@github.com:opscode-cookbooks/postgresql.git
