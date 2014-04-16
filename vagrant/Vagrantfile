@@ -19,7 +19,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end  
   end
 
-
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["../"]
+    chef.add_recipe 'helloworld'
+  end
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   # config.vm.box_url = "http://domain.com/path/to/above.box"
