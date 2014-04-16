@@ -32,3 +32,6 @@
 [submodule "mysql"]
 	path = mysql
 	url = git@github.com:opscode-cookbooks/mysql.git
+[submodule "hello"]
+	path = hello
+	url = git@github.com:MaxMoreno/hello.git
