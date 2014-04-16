@@ -1,9 +1,6 @@
 [submodule "java"]
 	path = java
 	url = https://github.com/inzpiral/java
-[submodule "openfire"]
-	path = openfire
-	url = git@github.com:inzpiral/openfire.git
 [submodule "database"]
 	path = database
 	url = git@github.com:opscode-cookbooks/database.git
