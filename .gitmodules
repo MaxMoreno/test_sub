@@ -29,3 +29,6 @@
 [submodule "hello"]
 	path = hello
 	url = git@github.com:MaxMoreno/hello.git
+[submodule "mysql-chef_gem"]
+	path = mysql-chef_gem
+	url = git@github.com:MaxMoreno/mysql-chef_gem.git
