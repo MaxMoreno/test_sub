@@ -7,9 +7,7 @@
 [submodule "aws"]
 	path = aws
 	url = git@github.com:opscode-cookbooks/aws.git
-[submodule "build-essential"]
-	path = build-essential
-	url = git@github.com:opscode-cookbooks/build-essential.git
+
 [submodule "openssl"]
 	path = openssl
 	url = git@github.com:opscode-cookbooks/openssl.git
@@ -23,12 +21,16 @@
 	path = xfs
 	url = git@github.com:opscode-cookbooks/xfs.git
 
-[submodule "mysql"]
-	path = mysql
-	url = git@github.com:opscode-cookbooks/mysql.git
+
 [submodule "hello"]
 	path = hello
 	url = git@github.com:MaxMoreno/hello.git
 [submodule "mysql-chef_gem"]
 	path = mysql-chef_gem
 	url = git@github.com:MaxMoreno/mysql-chef_gem.git
+[submodule "mysql"]
+	path = mysql
+	url = git@github.com:MaxMoreno/mysql.git
+[submodule "build-essential"]
+	path = build-essential
+	url = git@github.com:MaxMoreno/build-essential.git
