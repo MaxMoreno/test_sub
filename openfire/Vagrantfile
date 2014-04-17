@@ -1,0 +1,51 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.omnibus.chef_version = "11.4.4" 
+  
+  config.vm.host_name = "openfire"
+  config.vm.box = "precise64"
+  config.vm.network "private_network", ip: "33.33.33.2"
+
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["../"]
+    chef.add_recipe 'apt'
+    chef.add_recipe 'mysql::server'
+    chef.add_recipe 'database::mysql'
+    chef.add_recipe 'openfire'
+    chef.json = {
+        :java => {
+          :jdk_version => '7',
+        },
+        :openfire => {
+          :config => {
+            :setup => 'true',
+            :database =>{
+              :driver => 'com.mysql.jdbc.Driver',
+              :server_url => 'jdbc:mysql://localhost:3306/openfire?rewriteBatchedStatements=true'
+            }
+          },
+          :database => {
+            :active => true,
+            :type => 'mysql',
+            :local => 'true',
+            :user => 'root',
+            :password => 'root123'
+          }
+        },
+        :mysql => {
+          :server_root_password => "root123",
+          :server_repl_password => "root123",
+          :server_debian_password => "root123",
+          :bind_address => "0.0.0.0",
+          :allow_remote_root => true
+        }
+    }
+
+    chef.log_level = :debug
+  end
+
+end
